@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products | Marcylhey's Collection</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Cinzel+Decorative:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav>
+      <a href="feature.html">Feature</a>
+      <a href="product.html" class="active">Products</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="logo">
+      <img src="images/logo1.png" alt="Marcylhey's Collection Logo">
+       <a href="landing.html" class="brand-name">Marcylhey's Collection</a>
+    </div>
+    <div class="header-icons">
+      <img src="images/search.png" alt="Search Icon" class="icon">
+      <img src="images/user.png" alt="User Icon" class="icon">
+      <img src="images/cart.png" alt="Cart Icon" class="icon">
+    </div>
+  </header>
+
+  <!-- Product Section -->
+  <section class="products-page">
+    <!-- Banner -->
+    <div class="product-banner">
+        <h1>Our Products</h1>
+    </div>
+
+    <!-- Filter & Sort -->
+      <!-- Search Bar -->
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search for products...">
+    </div>
+
+    <!-- Filter + Sort Controls -->
+    <div class="filter-sort">
+      <select id="categoryFilter">
+        <option value="all">All Categories</option>
+        <option value="bags">Bags</option>
+        <option value="wallets">Wallets</option>
+        <option value="watches">Watches</option>
+        <option value="perfumes">Perfumes</option>
+      </select>
+
+      <select id="sortOptions">
+        <option value="default">Sort By</option>
+        <option value="priceLowHigh">Price: Low to High</option>
+        <option value="priceHighLow">Price: High to Low</option>
+        <option value="newest">Newest</option>
+      </select>
+    </div>
+
+    <!-- Product Grid -->
+    <div class="product-grid" id="productGrid">
+
+      <!-- Example Product -->
+      <div class="product-card" data-category="bags" data-price="199" data-name="Luxury Leather Bag">
+        <img src="images/bag.jpg" alt="Leather Bag">
+        <h4>Luxury Leather Bag</h4>
+        <p class="desc">Elegant leather bag perfect for everyday use.</p>
+        <p class="price">₱199</p>
+        <p class="details">Color: Black | Size: Medium</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <!-- Rating -->
+        <div class="rating" data-rating="0">
+          <span class="star">☆</span>
+          <span class="star">☆</span>
+          <span class="star">☆</span>
+          <span class="star">☆</span>
+          <span class="star">☆</span>
+        </div>
+        <button class="btn add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-category="bags" data-price="249" data-name="Tote Bag">
+        <img src="images/bag2.jpg" alt="Tote Bag">
+        <h4>Stylish Tote Bag</h4>
+        <p class="desc">Spacious tote bag with premium stitching.</p>
+        <p class="price">₱249</p>
+        <p class="details">Color: White/Cream | Size: Medium</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <!-- Rating -->
+        <div class="rating" data-rating="0">
+          <span class="star">☆</span>
+          <span class="star">☆</span>
+          <span class="star">☆</span>
+          <span class="star">☆</span>
+          <span class="star">☆</span>
+        </div>
+        <button class="btn add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-category="bags" data-price="179" data-name="Chic Handbag">
+        <img src="images/bag3.jpg" alt="Chic Handbag">
+        <h4>Chic Handbag</h4>
+        <p class="desc">Compact handbag for casual and formal wear.</p>
+        <p class="price">₱179</p>
+        <p class="details">Color: Silver | Size: Small</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <!-- Rating -->
+        <div class="rating" data-rating="0">
+          <span class="star">☆</span>
+          <span class="star">☆</span>
+          <span class="star">☆</span>
+          <span class="star">☆</span>
+          <span class="star">☆</span>
+        </div>
+        <button class="btn add-to-cart">Add to Cart</button>
+      </div>
+
+       <div class="product-card" data-category="bags" data-price="299" data-name="Travel Bag">
+        <img src="images/bag4.jpg" alt="Travel Bag">
+        <h4>Travel Bag</h4>
+        <p class="desc">Durable and stylish bag for weekend getaways.</p>
+        <p class="price">₱299</p>
+        <p class="details">Color: Grey | Size: Large</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <!-- Rating -->
+        <div class="rating" data-rating="0">
+          <span class="star">☆</span>
+          <span class="star">☆</span>
+          <span class="star">☆</span>
+          <span class="star">☆</span>
+          <span class="star">☆</span>
+        </div>
+        <button class="btn add-to-cart">Add to Cart</button>
+      </div>
+      
+      <div class="product-card" data-category="wallets" data-price="99" data-name="Classic Wallet">
+        <img src="images/wallet.jpg" alt="Classic Wallet">
+        <h4>Classic Wallet</h4>
+        <p class="desc">Durable and timeless wallet with multiple slots.</p>
+        <p class="price">₱99</p>
+        <p class="details">Color: Dark Green | Size: Medium</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <!-- Rating -->
+        <div class="rating" data-rating="0">
+          <span class="star">☆</span>
+          <span class="star">☆</span>
+          <span class="star">☆</span>
+          <span class="star">☆</span>
+          <span class="star">☆</span>
+        </div>
+        <button class="btn add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-category="wallets" data-price="119" data-name="Slim Wallet">
+        <img src="images/wallet2.jpg" alt="Slim Wallet">
+        <h4>Slim Wallet</h4>
+        <p class="desc">Minimalist slim wallet for easy carry.</p>
+        <p class="price">₱119</p>
+        <p class="details">Color: Brown | Size: Small</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <!-- Rating -->
+        <div class="rating" data-rating="0">
+          <span class="star">☆</span>
+          <span class="star">☆</span>
+          <span class="star">☆</span>
+          <span class="star">☆</span>
+          <span class="star">☆</span>
+        </div>
+        <button class="btn add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-category="wallets" data-price="139" data-name="Leather Wallet">
+        <img src="images/wallet3.jpg" alt="Leather Wallet">
+        <h4>Leather Wallet</h4>
+        <p class="desc">Premium leather wallet with elegant finish.</p>
+        <p class="price">₱139</p>
+        <p class="details">Color: Red | Size: Large</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <!-- Rating -->
+        <div class="rating" data-rating="0">
+          <span class="star">☆</span>
+          <span class="star">☆</span>
+          <span class="star">☆</span>
+          <span class="star">☆</span>
+          <span class="star">☆</span>
+        </div>
+        <button class="btn add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-category="wallets" data-price="159" data-name="Zipper Wallet">
+        <img src="images/wallet4.jpg" alt="Zipper Wallet">
+        <h4>Zipper Wallet</h4>
+        <p class="desc">Stylish wallet with secure zipper closure.</p>
+        <p class="price">₱159</p>
+        <p class="details">Color: Denim Blue | Size: Small</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <!-- Rating -->
+        <div class="rating" data-rating="0">
+          <span class="star">☆</span>
+          <span class="star">☆</span>
+          <span class="star">☆</span>
+          <span class="star">☆</span>
+          <span class="star">☆</span>
+        </div>
+        <button class="btn add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-category="watches" data-price="499" data-name="Premium Watch">
+        <img src="images/watch.jpg" alt="Premium Watch">
+        <h4>Premium Watch</h4>
+        <p class="desc">Stylish wristwatch designed for modern luxury.</p>
+        <p class="price">₱499</p>
+        <p class="details">Color: Silver & Gold | Size: Medium</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <!-- Rating -->
+        <div class="rating" data-rating="0">
+          <span class="star">☆</span>
+          <span class="star">☆</span>
+          <span class="star">☆</span>
+          <span class="star">☆</span>
+          <span class="star">☆</span>
+        </div>
+        <button class="btn add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-category="watches" data-price="599" data-name="Sport Watch">
+        <img src="images/watch2.jpg" alt="Sport Watch">
+        <h4>Sport Watch</h4>
+        <p class="desc">Durable waterproof watch with modern design.</p>
+        <p class="price">₱599</p>
+        <p class="details">Color: Black | Size: Medium</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <!-- Rating -->
+        <div class="rating" data-rating="0">
+          <span class="star">☆</span>
+          <span class="star">☆</span>
+          <span class="star">☆</span>
+          <span class="star">☆</span>
+          <span class="star">☆</span>
+        </div>
+        <button class="btn add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-category="watches" data-price="699" data-name="Smart Watch">
+        <img src="images/watch3.jpg" alt="Smart Watch">
+        <h4>Smart Watch</h4>
+        <p class="desc">Tech-driven smartwatch with fitness features.</p>
+        <p class="price">₱699</p>
+        <p class="details">Color: Black | Size: Medium</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <!-- Rating -->
+        <div class="rating" data-rating="0">
+          <span class="star">☆</span>
+          <span class="star">☆</span>
+          <span class="star">☆</span>
+          <span class="star">☆</span>
+          <span class="star">☆</span>
+        </div>
+        <button class="btn add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-category="watches" data-price="799" data-name="Luxury Watch">
+        <img src="images/watch4.jpg" alt="Luxury Watch">
+        <h4>Luxury Watch</h4>
+        <p class="desc">Timeless luxury watch with elegant dial.</p>
+        <p class="price">₱799</p>
+        <p class="details">Color: Gold | Size: Medium</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <!-- Rating -->
+        <div class="rating" data-rating="0">
+          <span class="star">☆</span>
+          <span class="star">☆</span>
+          <span class="star">☆</span>
+          <span class="star">☆</span>
+          <span class="star">☆</span>
+        </div>
+        <button class="btn add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-category="perfumes" data-price="299" data-name="Pure Musk Afnan">
+        <img src="images/perfum1.jpg" alt="Pure Musk Afnan">
+        <h4>Pure Musk Afnan</h4>
+        <p class="desc">Pure Musk by Afnan is a Floral Woody Musk fragrance for women and men.</p>
+        <p class="price">₱299</p>
+        <p class="details">Accords: Musky, Powdery, Floral, Animalic, Sweet | For: Her & Him</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <!-- Rating -->
+        <div class="rating" data-rating="0">
+          <span class="star">☆</span>
+          <span class="star">☆</span>
+          <span class="star">☆</span>
+          <span class="star">☆</span>
+          <span class="star">☆</span>
+        </div>
+        <button class="btn add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-category="perfumes" data-price="299" data-name="La Vie Est Belle Vanille Nude Lancôme">
+        <img src="images/perfum2.jpg" alt="Perfume">
+        <h4>La Vie Est Belle Vanille Nude Lancôme</h4>
+        <p class="desc">La Vie Est Belle Vanille Nude by Lancôme is a Oriental Floral fragrance for women.</p>
+        <p class="price">₱299</p>
+        <p class="details">Accords: Vanilla, Powdery, Musky, Woody, White floral, Aldehydic, Sweet, Balsamic | For: Her</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <!-- Rating -->
+        <div class="rating" data-rating="0">
+          <span class="star">☆</span>
+          <span class="star">☆</span>
+          <span class="star">☆</span>
+          <span class="star">☆</span>
+          <span class="star">☆</span>
+        </div>
+        <button class="btn add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-category="perfumes" data-price="299" data-name="Musamam White Intense Lattafa Perfumes">
+        <img src="images/perfum3.jpg" alt="Musamam White Intense Lattafa Perfumes">
+        <h4>Musamam White Intense Lattafa Perfumes</h4>
+        <p class="desc">Musamam White Intense by Lattafa Perfumes is a Oriental Floral fragrance for women and men.</p>
+        <p class="price">₱299</p>
+        <p class="details">Accords: Woody, Warm spicy, Coconut, Sweet, Citrus, Powdery, Amber, Yellow floral, Musky, Vanilla | For: Her & Him</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <!-- Rating -->
+        <div class="rating" data-rating="0">
+          <span class="star">☆</span>
+          <span class="star">☆</span>
+          <span class="star">☆</span>
+          <span class="star">☆</span>
+          <span class="star">☆</span>
+        </div>
+        <button class="btn add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card" data-category="perfumes" data-price="299" data-name="For Him Vetiver Musc Narciso Rodriguez">
+        <img src="images/perfum4.jpg" data-name="For Him Vetiver Musc Narciso Rodriguez">
+        <h4>For Him Vetiver Musc Narciso Rodriguez</h4>
+        <p class="desc">For Him Vetiver Musc by Narciso Rodriguez is a fragrance for men.</p>
+        <p class="price">₱299</p>
+        <p class="details">Accords: Aromatic, Woody, Fresh spicy, Musky,Warm spicy, Powdery, Earthy, Lavender | For: Him</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <!-- Rating -->
+        <div class="rating" data-rating="0">
+          <span class="star">☆</span>
+          <span class="star">☆</span>
+          <span class="star">☆</span>
+          <span class="star">☆</span>
+          <span class="star">☆</span>
+        </div>
+        <button class="btn add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Cart Message -->
+    <div id="cartMessage"></div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-logo">
+      <img src="images/Logo.png" alt="MC Logo">
+      <h3>Find<br>Everyday<br>Luxury</h3>
+    </div>
+    <div class="footer-links">
+      <div>
+        <h4>Company</h4>
+        <a href="feature.html">Feature</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h4>Get Help</h4>
+        <a href="shipping.html">Shipping</a>
+        <a href="returns.html">Returns</a>
+        <a href="order-status.html">Order Status</a>
+        <a href="payment.html">Payment Options</a>
+      </div>
+      <div>
+        <h4>Shop Now</h4>
+        <a href="bags.html">Bags</a>
+        <a href="wallets.html">Wallets</a>
+        <a href="watches.html">Watches</a>
+        <a href="perfumes.html">Perfumes</a>
+      </div>
+      <div>
+        <h4>Follow Us</h4>
+        <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+        <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+        <a href="https://shopee.ph/" target="_blank">Shopee</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/product-list.js"></script>
+</body>
+</html>

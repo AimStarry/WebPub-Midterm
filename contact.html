@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Marcylhey's Collection</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Cinzel+Decorative:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav>
+      <a href="feature.html">Feature</a>
+      <a href="product.html">Products</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+    <div class="logo">
+      <img src="images/logo1.png" alt="Marcylhey's Collection Logo">
+       <a href="landing.html" class="brand-name">Marcylhey's Collection</a>
+    </div>
+    <div class="header-icons">
+      <img src="images/search.png" alt="Search Icon" class="icon">
+      <img src="images/user.png" alt="User Icon" class="icon">
+      <img src="images/cart.png" alt="Cart Icon" class="icon">
+    </div>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="contact-page">
+    <div class="contact-banner">
+      <h1>Contact Us</h1>
+    </div>
+
+    <div class="contact-container">
+      <h2>We'd love to hear from you!</h2>
+      <p>Fill out the form below and we'll get back to you as soon as possible.</p>
+
+      <form class="contact-form" id="contactForm">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="phone">Contact Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="e.g. 0912-345-6789" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+
+    <div id="popupMessage" class="popup">
+        <div class="popup-content">
+            <span id="closePopup" class="close">&times;</span>
+            <p id="popupText"></p>
+        </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-logo">
+      <img src="images/Logo.png" alt="MC Logo">
+      <h3>Find<br>Everyday<br>Luxury</h3>
+    </div>
+    <div class="footer-links">
+      <div>
+        <h4>Company</h4>
+        <a href="feature.html">Feature</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h4>Get Help</h4>
+        <a href="shipping.html">Shipping</a>
+        <a href="returns.html">Returns</a>
+        <a href="order-status.html">Order Status</a>
+        <a href="payment.html">Payment Options</a>
+      </div>
+      <div>
+        <h4>Shop Now</h4>
+        <a href="bags.html">Bags</a>
+        <a href="wallets.html">Wallets</a>
+        <a href="watches.html">Watches</a>
+        <a href="perfumes.html">Perfumes</a>
+      </div>
+      <div>
+        <h4>Follow Us</h4>
+        <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+        <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+        <a href="https://shopee.ph/" target="_blank">Shopee</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/contact.js"></script>
+</body>
+</html>
